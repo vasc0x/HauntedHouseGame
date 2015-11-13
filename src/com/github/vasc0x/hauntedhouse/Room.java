@@ -115,7 +115,10 @@ public class Room extends Item {
             paintTV();
             
             // Prompt the user to enter the House
-            getUserInput (Messages.MESSAGE_ENTRANCE, 1, 3);
+            //getUserInput (Messages.MESSAGE_ENTRANCE, 1, 3);
+            
+            String userInput = (String) JOptionPane.showInputDialog(mainWindow, "Select what you want to do", "Make a selection", JOptionPane.PLAIN_MESSAGE, null, Messages.messageEntrance, "Go back");
+            System.out.println(userInput);
             
             switch (userSelection)
             {   
